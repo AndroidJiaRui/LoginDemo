@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="24dp"
+    android:layout_marginLeft="24dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--表头-->
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal">
+
+
+            <RadioGroup
+                android:id="@+id/fragment4_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/radioButtona"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/common_icon_alllist_n_xxhdpi"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="全部订单"
+                    android:textColor="#666666"/>
+                <RadioButton
+                    android:id="@+id/radioButtonb"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/common_ion_money_n_xxhdpi"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="待付款"
+                    android:textColor="#666666"/>
+                <RadioButton
+                    android:id="@+id/radioButtonc"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/common_icon_receive_n_xxhdpi"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="待收货"
+                    android:textColor="#666666"/>
+                <RadioButton
+                    android:id="@+id/radioButtond"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/commom_icon_commnt_n_xxhdpi"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="待评价"
+                    android:textColor="#666666"/>
+                <RadioButton
+                    android:id="@+id/radioButtone"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/common_icon_finish_n_xxhdpi"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="已完成"
+                    android:textColor="#666666"/>
+
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment4_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+</LinearLayout>

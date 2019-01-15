@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp">
+            <TextView
+                android:textColor="#f2f2f2"
+                android:id="@+id/popu_address_name"
+                android:text="李小二"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#f2f2f2"
+                android:id="@+id/popu_address_phone"
+                android:layout_alignParentRight="true"
+                android:text="123456"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#f2f2f2"
+                android:layout_marginTop="10dp"
+                android:id="@+id/popu_address_address"
+
+                android:text="地址 哈哈哈"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="@dimen/dp_20"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#f2f2f2"/>
+            <TextView
+                android:id="@+id/popu_address_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff5f71"
+                android:textSize="12sp"
+                android:text="选择"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

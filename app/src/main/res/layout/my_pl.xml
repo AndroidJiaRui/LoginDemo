@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/shape"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/pl_header"
+            android:src="@drawable/o"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:roundAsCircle="true"/>
+        <TextView
+            android:id="@+id/pl_nickname"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="hhh"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_marginRight="10dp"
+            android:id="@+id/pl_time"
+            android:text="4444"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="25dp"
+        android:textColor="#666666"
+        android:id="@+id/pl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.example.view.MyRecycleGridView
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pl_grid_view"></com.example.view.MyRecycleGridView>
+
+</LinearLayout>
